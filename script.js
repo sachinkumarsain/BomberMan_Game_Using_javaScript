@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let gameOverScore= document.querySelector(".scoreFinal span")
   let boxColorWhite=document.querySelector("#boxId")
   let Coin=this.documentElement.querySelector("#coinScore span")
-  let countCoin=0
+  let countCoin=0   
   let randomBox = [];
   let countScore = 0;
   for (let j = 0; j < 9; j++) {
@@ -23,16 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < boxAll.length; i++) {
     boxAll[i].onclick = () => {
       if (boxAll[i].classList.contains("box2")) {
+        console.log("ramraja")
         check = true;
         if (check){
+          console.log("ram")
           for (let j = 0; j < boxAll.length; j++) {
             if (boxAll[j].hasAttribute("id")){
               boxAll[j].removeAttribute("id")
-            console.log(ram)
-              container.style.display="none"
-              openResult.style.display="flex"
-              gameOverScore.innerHTML=countScore
-              finalCoin.innerHTML=countCoin
+              setTimeout(()=>{
+               
+                // console.log(ram)
+                  container.style.display="none"
+                  openResult.style.display="flex"
+                  gameOverScore.innerHTML=countScore
+              },2000)
+            
+              finalCoin.innerHTML=countCoin  
 
             }
           }
@@ -67,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
       else{
         if(boxAll[i].classList.contains("box2")){
           boxAll[i].classList.remove("box2")
+        
+          boxAll[i].setAttribute("id","boxId")
         }
         else{
           countScore=0
