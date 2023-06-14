@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-<header>BOMBER MAN</header>
-<div class="game-score">SCORE = <div id="gameScore">0</div></div>
-<div id="flagScore" class="flag-score">FLAGS = 0</div>
-<div id="gridContainer" class="grid-container"></div>
-<div id="resultDisplay" class="result-display"></div>
-<button id="resetButton">RESET</button>
 
-<div class="container">
+    <header>BOMBER MAN</header>
+    <div class="game-score">SCORE = <div id="gameScore">0</div>
+    </div>
+    <div class="coin-score">Coin = <div id="coinScore"><span></span><i class="fa-solid fa-coins"></i></div>
+    </div>
 
-</div>
+    <div id="flagScore" class="flag-score">FLAGS = 0</div>
+    <div id="gridContainer" class="grid-container"></div>
+    <div class="openResult">
+        <h1>Game Over </h1>
+        <h2 class="resultName">Your Result</h2>
+        <div>
+            <h2 class="scoreFinal">Score : <span></span></h2>
+            <h2 class="coin">Coin : <span></span><i class="fa-solid fa-coins"></i></h2>
+        </div>
+        <button id="resetButton">RESET</button>
+    </div>
+    <div id="resultDisplay" class="result-display"></div>
 
 
-<script src="script.js"></script>
+    <div class="container">
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>

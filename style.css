@@ -41,6 +41,20 @@ header {
 	font-size: 30px;
 	color: #b63f3f;
 }
+.coin-score{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	width: 100%;
+	font-size: 30px;
+	color: #b63f3f;
+}
+#coinScore span{
+	margin: 0px 10px ;
+}
+#coinScore {
+	color: gold;
+}
 
 .flag-score {
 	display: flex;
@@ -94,4 +108,17 @@ button {
 #boxId{
 	background:white;
 	
+}
+.openResult{
+	width: 50%;
+	height: 60vh;
+	background-color: rgb(71, 58, 58);
+	color: white;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.coin i{
+	color: gold;
 }
