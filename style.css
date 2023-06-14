@@ -33,7 +33,7 @@ header {
 	letter-spacing: 4px;
 }
 
-.gameScore {
+.game-score {
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -84,6 +84,14 @@ button {
 	height: 42px;
 
 }
-/* .box2{
-	display:none;
-} */
+.box1{
+	background-color: green;
+}
+.box2{
+	background: url(./bom1.png) no-repeat  center / cover red;
+	/* background-color: red; */
+}
+#boxId{
+	background:white;
+	
+}
